@@ -1,17 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="favicon/favicon.ico" rel="shortcut icon"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="RAPIDO trans Vám ponúka špičkovú nákladnú dopravu na vysokej úrovni a so špičkovou technikou">
-  <meta name="keywords" content="kamion, služba, transport, logistika, rapidotrans">
-  <meta name="author" content="Timotej Palfy">
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-  <title>RAPIDO trans</title>
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="favicon/favicon.png"/>
+    <script type="text/javascript" src="jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="jquery.touchSwipe.js"></script>
+    <script type="text/javascript" src="jquery.horizonScroll.js"></script>
+    <title>RAPIDO trans</title>
 
+</head>
 <body>
 <header data-role="header" id="header">
     <nav class="menu">
@@ -21,9 +20,9 @@
             </li>
 
             <li class="sub_menu_1">
-                <a href="#section-section2" style="cursor: not-allowed"><span>O nás</span></a>
+                <a href="#"><span>O nás</span></a>
                   <div class="sub_menu_1_content">
-                    <a href="" style="cursor: not-allowed"><span>Charakteristika</span></a>
+                    <a href="charakteristika.html"><span>Charakteristika</span></a>
                     <a href="" style="cursor: not-allowed"><span>Užitočné odkazy</span></a>
                   </div>
             </li>
@@ -49,28 +48,27 @@
         </ul>
     </nav>
 </header>
-<main class="slides">
 
-  <div id="1" class="slide">
-    <div class="content_uvod">
+<div class="horizon-prev"><img src="img/l-arrow.png" title="spät" alt="spat"></div>
+<div class="horizon-next"><img src="img/r-arrow.png" title="dalej" alt="dalej"></div>
 
-      <h1>RAPIDO <i class="rt">TRANS</i></h1>
-      <p>Medzinárodná dopravná a prepravná spoločnosť. Našou prácou je vnútroštátna a medzinárodná kamiónová doprava, doprava ADR, kusové zásielky, distribúcia, skladovanie. Na trhu sme síce len od roku 2016 no sme najrýchlešie rastúcou firmou na Slovensku.</p>
+<section data-role="section" id="section-section1">
+    
+    <div id="1" class="slide">
+        <div class="content_uvod">
 
-      <div class="button">
-        <a href="o_nas.html"><span>Viac o firme</span></a>
-      </div>
+            <h1>RAPIDO <i class="rt">TRANS</i></h1>
+            <p>Medzinárodná dopravná a prepravná spoločnosť. Našou prácou je vnútroštátna a medzinárodná kamiónová doprava, doprava ADR, kusové zásielky, distribúcia, skladovanie. Na trhu sme síce len od roku 2016 no sme najrýchlešie rastúcou firmou na Slovensku.</p>
+
+         <div class="button">
+        <a href="charakteristika.html"><span>Viac o firme</span></a>
+        </div>
     </div>
-
-    <div class="content_obrazok">
-
-      <img src="img/kamion.png">
-
-    </div>
-
   </div>
+</section>
 
-  <div id="2" class="slide">
+<section data-role="section" id="section-section2">
+    <div id="2" class="slide">
     <div class="content_vozidla">
       <h2>DOPRAVA / O NAŠICH VOZIDLÁCH</h2>
       <p>Už rok pôsobenia získala doprava RAPIDO trans patričné know-how pre zaistenie dodávok produktov vo všetkých teplotných režimoch a množstve. Vďaka vlastném vozovému parku (cez 400 vozidiel všetkých kategórii) a flexibilnej kapacite, sme schopní realizovať prepravu 7 dní v týždni 365 dní v roku. Našou prednosťou je realizácia prepravy v rámci SK, CZ, D, NL, HU, PL a FR. Zaistíme tiež však prepravu vrámci ZÁPADNEJ a STREDNEJ EURÓPY.
@@ -106,8 +104,10 @@
       </ul>
     </div>
   </div>
+</section>
 
-  <div id="3" class="slide">
+<section data-role="section" id="section-section3">
+    <div id="3" class="slide">
     <div class="content_sklady">
       <h2>Sklady</h2>
 
@@ -137,7 +137,10 @@
 
     </div>
   </div>
-  <div id="4" class="slide">
+</section>
+
+<section data-role="section" id="section-section4">
+    <div id="4" class="slide">
     <div class="content_logistika">
       <h2>Profesionálna & Full servis logistika</h2>
       <p>Ovládame komplex činností, ktoré partnerovi umožňujú venovať sa tomu, čo je jeho primárny business</p>
@@ -156,61 +159,21 @@
 
     </div>
   </div>
-</main>
-<script>
-  $(document).ready(function(){
-    alert('UPOZORNENIE: Pre pohyb na stránke scrollujte kolieskom hore. Ďakujeme.');
-  });
-</script>
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js'></script> 
-<script>
-$(function () {
-    function showSlide(n) {
-        $('body').unbind('mousewheel');
-        currSlide += n;
-        currSlide = currSlide <= 0 ? 0 : currSlide >= $slide.length - 1 ? $slide.length - 1 : currSlide;
-        var displacment = window.innerWidth * currSlide;
-        $('.slides').css('transform', 'translateX(-' + displacment + 'px)');
-        setTimeout(function () {
-            $('body').bind('mousewheel', mouseEvent);
-        }, 800);
-        $('nav a.active').removeClass('active');
-        $($('a')[currSlide]).addClass('active');
-    }
-    function mouseEvent(e, delta) {
-        showSlide(delta >= 0 ? 1 : -1);
-        e.preventDefault();
-    }
-    $('nav a').click(function (e) {
-        var newslide = parseInt($(this).attr('href')[1]);
-        var diff = newslide - currSlide - 1;
-        showSlide(diff);
-        e.preventDefault();
-    });
-    $(window).resize(function () {
-        var displacment = window.innerWidth * currSlide;
-        $('.slides').css('transform', 'translateX(-' + displacment + 'px)');
-    });
-    var currSlide = 0;
-    var $slide = $('.slide');
-    $($('nav a')[0]).addClass('active');
-    $('body').bind('mousewheel', mouseEvent);
-});
-</script>
+</section>
+
+<footer data-role="footer" id="footer"></footer>
+
 <script type="text/javascript">
+    // By default, swipe is enabled.
+    $('section').horizon();
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
+    // If you do not want to include another plugin, TouchSwipe, you can set it to false in the default options by passing in the option as false.
+    //$('section').horizon({swipe: false});
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+    $(document).on('click', '.go-to-2', function () {
+        $(document).horizon('scrollTo', 'section-section2');
+    });
 </script>
+
 </body>
 </html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="favicon/favicon.png"/>
+    <script type="text/javascript" src="jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="jquery.touchSwipe.js"></script>
+    <script type="text/javascript" src="jquery.horizonScroll.js"></script>
+    <title>RAPIDO trans</title>
+
+</head>
+<body>
+<header data-role="header" id="header">
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="index.html"><span>Domov</span></a>
+            </li>
+
+            <li class="sub_menu_1">
+                <a href="#"><span>O nás</span></a>
+                  <div class="sub_menu_1_content">
+                    <a href="charakteristika.html"><span>Charakteristika</span></a>
+                    <a href="" style="cursor: not-allowed"><span>Užitočné odkazy</span></a>
+                  </div>
+            </li>
+
+            <li class="sub_menu_1">
+                <a href="#section-section3" style="cursor: not-allowed"><span>Ponuka</span></a>
+                  <div class="sub_menu_1_content">
+                    <a href="" style="cursor: not-allowed"><span>Cenník služieb</span></a>
+                    <a href="" style="cursor: not-allowed;"><span>Ponuka práce</span></a>
+                    <a href="" style="cursor: not-allowed"><span>Videogaléria</span></a>
+                    <a href="" style="cursor: not-allowed"><span>Fotogaléria</span></a>
+                  </div>
+            </li>
+
+            <li class="sub_menu_1">
+                <a href="#section-section4" style="cursor: not-allowed"><span>Kontakt</span></a>
+                  <div class="sub_menu_1_content">
+                    <a href="" style="cursor: not-allowed"><span>Kontakty a mapa</span></a>
+                    <a href="" style="cursor: not-allowed"><span>Kontaktný formulár</span></a>
+                  </div>
+            </li>
+
+        </ul>
+    </nav>
+</header>
+
+<div class="horizon-prev"><img src="img/l-arrow.png"></div>
+<div class="horizon-next"><img src="img/r-arrow.png"></div>
+
+<section data-role="section" id="section-section1">
+    
+    <div id="1" class="slide">
+        <div class="charakteristika">
+
+            <h2>KTO SME?</h2>
+            <p>Sme nákladná automobilová firma, založená v roku 2016 pánom Jurajom Novákom. Prirodzeným rastom a tvorbou vlastného KNOW-HOW sa spoločnosť RAPIDO trans stala jednou z najvýznamnejších logistických firiem na Slovensku. Aktívnou logistikou reaguje na požiadavky trhu so silným dôrazom na enviromentálne orientovaný prístup. Spoločnosť pôsoby tiež v Česku, Polsku, Maďarsku, Nemecku, Holandsku a Francúzsku.</p>
+
+            <p class="bold"><b>Našim hlavným poslaním je poskytovanie komplexných logistických služieb</b></p>
+
+            <h3>Naše hlavné prednosti</h3>
+
+              <ul>
+                <li>Stabilný, skúsený a profesionálny logistický tím</li>
+                <li>Vysoko sofistikované informačné technológie</li>
+                <li>Riešenie akých koľvek problémov</li>
+                <li>EDI a webové rozhranie so zákazníkom</li>
+                <li>Prehľadný online reporting</li>
+                <li>Optimálna poloha logistických centier</li>
+                <li>Najmodernejšie technológie</li>
+              </ul>
+    </div>
+  </div>
+</section>
+
+<section data-role="section" id="section-section2">
+    <div id="2" class="slide">
+    <div class="uzitocne_odkazy">
+      <h2>Užitočné odkazy</h2>
+      
+    </div>
+  </div>
+</section>
+
+<footer data-role="footer" id="footer"></footer>
+
+<script type="text/javascript">
+    // By default, swipe is enabled.
+    $('section').horizon();
+
+    // If you do not want to include another plugin, TouchSwipe, you can set it to false in the default options by passing in the option as false.
+    //$('section').horizon({swipe: false});
+
+    $(document).on('click', '.go-to-2', function () {
+        $(document).horizon('scrollTo', 'section-section2');
+    });
+</script>
+
+</body>
+</html>
