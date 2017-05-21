@@ -388,6 +388,90 @@ section {
 /*uzitocne odkazy*/
 /*O NAS*/
 
+/*PONUKA*/
+/*Cenník*/
+.cennik {
+  width: 400px;
+  margin-left: 38%;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.cennik h2{
+  margin-bottom: 30px;
+  text-align: center; 
+}
+
+.cennik p {
+  margin-bottom: 30px; 
+}
+/*Cenník*/
+/*PONUKA*/
+
+/*KONTAKT*/
+/*Kontakt*/
+.kontant {
+  width: 400px;
+  margin-left: 38%;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.kontant h2{
+  margin-bottom: 30px;
+  text-align: center; 
+}
+
+.kontant p {
+  margin-bottom: 30px; 
+}
+
+iframe {
+  
+}
+/*Kontakt*/
+
+/*Kontaktný formulár*/
+.kontaktny_formular {
+  width: 80%;
+  margin-left: 15%;
+}
+
+.kontaktny_formular h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #f26101;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #304269;
+}
+
+.container {
+    border-radius: 5px;;
+    padding: 20px;
+}
+/*Kontaktný formulár*/
+/*KONTAKT*/
 .horizon-prev, .horizon-next {
     position: fixed;
     top: 50%;
