@@ -158,10 +158,12 @@ nav ul a span {
 /*Submune*/
 .sub_menu_1_content {
     display: none;
-    position: absolute;
+    float: right;
+    width: 300px;
+    position: relative;
     background-color: #304269;
-    width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
 }
 .sub_menu_1_content a{
     color: #D9E8F5;
@@ -529,6 +531,58 @@ input[type=submit]:hover {
 }
 /*Kontaktný formulár*/
 /*KONTAKT*/
+
+/*FOTO*/
+.foto h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.jlr {
+  font-size: 0;
+  margin-left: 10%;
+}
+
+.jlr div {
+    display: inline-block;    
+    padding: 5px;
+
+}
+
+.jlr div img {
+    height: 200px;
+    width:80%;
+}
+
+.jlr img.jlr_loaded {
+     -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+    opacity: 1;
+}
+
+.jlr .jlr_item {
+    font-size: 1rem;
+    display: inline-block;    
+    padding: 5px;
+}
+
+.jlr img.jlr_img {
+    height: 200px;
+
+}
+
+.jlr img.jlr_loaded {
+     -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+    opacity: 1;
+}
+/*FOTO*/
 .horizon-prev, .horizon-next {
     position: fixed;
     top: 50%;

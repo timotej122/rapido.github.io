@@ -8,6 +8,9 @@
     <script type="text/javascript" src="jquery-1.10.2.js"></script>
     <script type="text/javascript" src="jquery.touchSwipe.js"></script>
     <script type="text/javascript" src="jquery.horizonScroll.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <script src="js/jquery.lightroom.js"></script>
     <title>RAPIDO trans</title>
 
 </head>
@@ -140,21 +143,21 @@
 
 <section data-role="section" id="section-section4">
     <div id="foto" class="slide">
-    <div class="content_logistika">
-      <h2>FOTOGALÉRIA</h2>
-      <p>Ovládame komplex činností, ktoré partnerovi umožňujú venovať sa tomu, čo je jeho primárny business</p>
+    <div class="foto">
 
-      <ul>
-        <li>Aktívny full servis logistika, proces potravinárskeho aj nepotravinárskeho tovaru</li>
-        <li>Skladové činnosti SUCHO, CHLADNO a MRÁZ</li>
-        <li>Cross-docking</li>
-        <li>Kamiónová doprava, Drobná paletová a kartónová</li>
-        <li>Nákup / Predaj / Brokerská činnosť</li>
-        <li>Služby pridanej hodnoty CO-PACKING</li>
-        <li>Colné a daňové sklady</li>
-        <li>Paletové hospodárstvo</li>
-        <li>Archivačné služby</li>
-      </ul>
+      <h2>FOTOGALÉRIA</h2>
+      <div id="jLightroom" class="jlr gray_out">
+           <a href="https://unsplash.it/500/500?image=1013" data-lightbox="lb1" class="jlr_item"><img src="https://unsplash.it/500/500?image=1013" class="jlr_img" /></a>
+           <a href="https://unsplash.it/1200/600?image=1012" data-lightbox="lb1" class="jlr_item"><img src="https://unsplash.it/1200/600?image=1012" class="jlr_img" /></a>
+           <a href="https://unsplash.it/300/700?image=1011" data-lightbox="lb1" class="jlr_item"><img src="https://unsplash.it/300/700?image=1011" class="jlr_img" /></a>
+           <a href="https://unsplash.it/700/500?image=1013" data-lightbox="lb1" class="jlr_item"><img src="https://unsplash.it/730/500?image=1013" class="jlr_img" /></a>
+           <a href="https://unsplash.it/1000/400?image=1005" data-lightbox="lb1" class="jlr_item"><img src="https://unsplash.it/1000/400?image=1005" class="jlr_img" /></a>
+           <a href="https://unsplash.it/1000/400?image=1004" data-lightbox="lb1" class="jlr_item"><img src="https://unsplash.it/1000/400?image=1004" class="jlr_img" /></a>
+           <a href="https://unsplash.it/500/500?image=1013" data-lightbox="lb1" class="jlr_item"><img src="https://unsplash.it/500/500?image=1013" class="jlr_img" /></a>
+           <a href="https://unsplash.it/1200/600?image=1012" data-lightbox="lb1" class="jlr_item"><img src="https://unsplash.it/1200/600?image=1012" class="jlr_img" /></a>
+           <a href="https://unsplash.it/300/700?image=1011" data-lightbox="lb1" class="jlr_item"><img src="https://unsplash.it/300/700?image=1011" class="jlr_img" /></a>
+           <a href="https://unsplash.it/700/500?image=1013" data-lightbox="lb1" class="jlr_item"><img src="https://unsplash.it/730/500?image=1013" class="jlr_img" /></a>
+        </div>
 
     </div>
   </div>
@@ -162,6 +165,7 @@
 
 <footer data-role="footer" id="footer"></footer>
 
+<!--HORIZONTÁLNE SCROLLOVANIE-->
 <script type="text/javascript">
     // By default, swipe is enabled.
     $('section').horizon();
@@ -173,7 +177,9 @@
         $(document).horizon('scrollTo', 'section-section2');
     });
 </script>
+<!--HORIZONTÁLNE SCROLLOVANIE-->
 
+<!--SIDE MENU-->
 <div class="jquery-script-ads"><script type="text/javascript"><!--
 google_ad_client = "ca-pub-2783044520727903";
 /* jQuery_demo */
@@ -222,5 +228,51 @@ $(document).ready(function () {
   })();
 
 </script>
+<!--SIDE MENU-->
+
+<!--FOTOGALERIA-->
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="jquery.lightroom.js"></script>
+    
+    <script type="text/javascript">
+        $("#jLightroom").lightroom({
+            image_container_selector: ".jlr_item",
+            img_selector: "img.jlr_img",
+            img_class_loaded: "jlr_loaded",
+            img_space: 5,
+            img_mode: 'min',
+            init_callback: function(elem){$(elem).removeClass("gray_out")}
+        }).init();
+    </script>
+  </body><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!--FOTOGALERIA-->
 </body>
 </html>
