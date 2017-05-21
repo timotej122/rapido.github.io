@@ -42,44 +42,103 @@ html, body {
 
 /*HLAVIČKA*/
 /*Menu*/
-
 header {
-  text-align: center;
-  background: rgba(242, 97, 1, 0.5);
-  position: fixed;
-  z-index: 100;
+  width: 5%;
   height: 100%;
+  position: fixed;
+  overflow: hidden;
+  transition: .32s ease-out;
+  z-index: 2;
+  background: #f26101;
+}
+
+header a, .navBtn { 
+  color: #fff;
+}
+
+.toggle { 
+  width: 312px; 
+}
+
+.reveal {
+  opacity: 1;
   left: 0;
-  width: 10%;
-  font-weight: 300;
-  font-size: 1em;
 }
 
-header nav {
+.navBtn {
+  font-size: 3em;
+  font-weight: 700;
+  margin: 30px 0 0;
+  width: 100%;
+  text-align: center;
+  line-height: 1em;
+  transition: .3s ease-out;
+  -webkit-transform: rotate(0deg);
+  transition: .3s ease-out;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000001;
+  left: 0;
 }
 
-header ul {
+.toggle .navBtn {
+  -webkit-transform: rotate(224deg);
+  color: #fff;
+  left: -100px;
+}
+
+.navBtn:hover { 
+  color: #304269;
+}
+
+.overlay {
+  width: 100%;
+  background: #384047;
+  opacity: .85;
+  z-index: 1;
+  height: 100%;
+  position: fixed;
+  display: none;
+}
+
+.push {
+  margin-left: 240px;
+  margin-right: -240px;
+  transition: .3s ease-in;
+}
+
+.toggle nav {
+  padding-left: 60px;
+  opacity: 1;
+}
+
+nav {
+  padding-left: 360px;
+  overflow: hidden;
+  position: absolute;
+  transition: .3s ease-out;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  height: 100%;
+}
+
+nav a:hover, .current, .toggle .navBtn { 
+  opacity: 1; 
+}
+
+nav ul {
   list-style-type: none;
   height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
 }
 
-header ul li {
+nav ul li {
     margin-top: 60px;
 }
 
-header ul a {
+nav ul a {
     text-decoration: none;
     color: #fff;
     height: 50px;
@@ -87,12 +146,11 @@ header ul a {
     padding: 12px;
 }
 
-header ul a:hover {
-    background: #f26101;
-    color: #fff;
+nav ul a:hover {
+    color: #304269;
 }
 
-header ul a span {
+nav ul a span {
     transform: translateY(-50%);
 }
 /*Menu*/
@@ -120,7 +178,6 @@ header ul a span {
     display: block;
 }
 /*Submenu*/
-/*MENU*/
 /*HLAVIČKA*/
 
 .button {
@@ -480,9 +537,9 @@ input[type=submit]:hover {
 }
 
 .horizon-prev {
-    left: 20px;
+    left: 8px;
 }
 
 .horizon-next {
-    right: 20px;
+    right: 8px;
 }

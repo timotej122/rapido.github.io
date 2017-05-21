@@ -12,22 +12,24 @@
 
 </head>
 <body>
-<header data-role="header" id="header">
-    <nav class="menu">
-        <ul>
+<div class="overlay"></div>
+    <header data-role="header" id="header">
+      <div class="navBtn">+</div>
+        <nav class="menu">
+          <ul>
             <li>
                 <a href="index.html"><span>Domov</span></a>
             </li>
 
             <li class="sub_menu_1">
-                <a href="o_nas.html"><span>O nás</span></a>
+                <a href="#"><span>O nás</span></a>
                   <div class="sub_menu_1_content">
-                    <a href="#1"><span>Charakteristika</span></a>
+                    <a href="charakteristika.html"><span>Charakteristika</span></a>
                     <a href="" style="cursor: not-allowed"><span>Užitočné odkazy</span></a>
                   </div>
             </li>
 
-             <li class="sub_menu_1">
+            <li class="sub_menu_1">
                 <a href="ponuka.html"><span>Ponuka</span></a>
                   <div class="sub_menu_1_content">
                     <a href="#cennik"><span>Cenník služieb</span></a>
@@ -45,9 +47,9 @@
                   </div>
             </li>
 
-        </ul>
-    </nav>
-</header>
+          </ul>
+        </nav>
+    </header>
 
 <div class="horizon-prev"><img src="img/l-arrow.png"></div>
 <div class="horizon-next"><img src="img/r-arrow.png"></div>
@@ -100,5 +102,53 @@
     });
 </script>
 
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script>
+$(document).ready(function () { 
+
+  var toggleMenu = function() {
+    $('header').toggleClass('toggle');
+    $('.main').toggleClass('push');
+    $('.overlay').toggleClass('block');
+    $('#social, .logo').toggleClass('reveal');
+  };
+
+  //Nav
+  $('.navBtn').click(function() {
+    toggleMenu();
+  });
+
+  Mousetrap.bind('esc', function() {
+    toggleMenu();
+  });
+
+});
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 </html>
