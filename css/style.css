@@ -250,6 +250,11 @@ section {
 /*INDEX.HTML*/
 
 /*1. Stránka*/
+.uvod {
+  background-image: url(../img/kamion.png);
+  background-repeat: no-repeat;
+  background-position: 
+}
 .content_uvod {
   width: 400px;
   margin-top: 20%;
