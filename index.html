@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="sk">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/png" href="favicon/favicon.png"/>
-    <script type="text/javascript" src="jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="jquery.touchSwipe.js"></script>
-    <script type="text/javascript" src="jquery.horizonScroll.js"></script>
+    <link rel="icon" type="image/png" href="favicon/favicon.PNG"/>
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
+    <script type="text/javascript" src="js/jquery.horizonScroll.js"></script>
     <title>RAPIDO trans</title>
 
 </head>
@@ -22,29 +22,15 @@
             </li>
 
             <li class="sub_menu_1">
-                <a href="#"><span>O nás</span></a>
-                  <div class="sub_menu_1_content">
-                    <a href="charakteristika.html"><span>Charakteristika</span></a>
-                    <a href="" style="cursor: not-allowed"><span>Užitočné odkazy</span></a>
-                  </div>
+                <a href="o_nas.html"><span>O nás</span></a>
             </li>
 
             <li class="sub_menu_1">
                 <a href="ponuka.html"><span>Ponuka</span></a>
-                  <div class="sub_menu_1_content">
-                    <a href="#cennik"><span>Cenník služieb</span></a>
-                    <a href="#praca"><span>Ponuka práce</span></a>
-                    <a href="#video"><span>Videogaléria</span></a>
-                    <a href="#foto"><span>Fotogaléria</span></a>
-                  </div>
             </li>
 
             <li class="sub_menu_1">
                 <a href="kontakt.html"><span>Kontakt</span></a>
-                  <div class="sub_menu_1_content">
-                    <a href="#1"><span>Kontakty a mapa</span></a>
-                    <a href="#2"><span>Kontaktný formulár</span></a>
-                  </div>
             </li>
 
           </ul>
@@ -55,22 +41,27 @@
 <div class="horizon-next"><img src="img/r-arrow.png" title="dalej" alt="dalej"></div>
 
 <section data-role="section" id="section-section1">
-    
-    <div id="1" class="slide uvod">
-        <div class="content_uvod">
-
-            <h1>RAPIDO <i class="rt">TRANS</i></h1>
+  <div id="1" class="slide uvod">
+    <div class="kamion">
+      <img src="img/kamion.PNG" width="40%">
+    </div>
+    <div class="content_uvod">
+            <img src="img/logo.png" width="50%">
             <p>Medzinárodná dopravná a prepravná spoločnosť. Našou prácou je vnútroštátna a medzinárodná kamiónová doprava, doprava ADR, kusové zásielky, distribúcia, skladovanie. Na trhu sme síce len od roku 2016 no sme najrýchlešie rastúcou firmou na Slovensku.</p>
-
          <div class="button">
-        <a href="charakteristika.html"><span>Viac o firme</span></a>
+        <a href="o_nas.html"><span>Viac o firme</span></a>
         </div>
     </div>
   </div>
 </section>
 
 <section data-role="section" id="section-section2">
-    <div id="2" class="slide">
+  <div id="2" class="slide">
+
+    <div class="kamiony">
+      <img src="img/doprava.PNG" width="30%">
+    </div> 
+
     <div class="content_vozidla">
       <h2>DOPRAVA / O NAŠICH VOZIDLÁCH</h2>
       <p>Už rok pôsobenia získala doprava RAPIDO trans patričné know-how pre zaistenie dodávok produktov vo všetkých teplotných režimoch a množstve. Vďaka vlastném vozovému parku (cez 400 vozidiel všetkých kategórii) a flexibilnej kapacite, sme schopní realizovať prepravu 7 dní v týždni 365 dní v roku. Našou prednosťou je realizácia prepravy v rámci SK, CZ, D, NL, HU, PL a FR. Zaistíme tiež však prepravu vrámci ZÁPADNEJ a STREDNEJ EURÓPY.
@@ -104,12 +95,18 @@
         <li>Nákup nových SCANII rady R a S</li>
         <li>Zoznam práce, kde stačí vyplniť jednoduchý formulár a môžte pre nás pracovať</li>
       </ul>
-    </div>
-  </div>
+
+    </div>     
+   </div> 
 </section>
 
 <section data-role="section" id="section-section3">
-    <div id="3" class="slide">
+  <div id="3" class="slide">
+
+    <div class="sklad">
+      <img src="img/sklady.PNG" width="30%">
+    </div>
+
     <div class="content_sklady">
       <h2>Sklady</h2>
 
@@ -142,7 +139,12 @@
 </section>
 
 <section data-role="section" id="section-section4">
-    <div id="4" class="slide">
+  <div id="4" class="slide">
+
+    <div class="logisticka">
+      <img src="img/logistika.PNG" width="30%">
+    </div>
+    
     <div class="content_logistika">
       <h2>Profesionálna & Full servis logistika</h2>
       <p>Ovládame komplex činností, ktoré partnerovi umožňujú venovať sa tomu, čo je jeho primárny business</p>
@@ -163,15 +165,12 @@
   </div>
 </section>
 
-<footer data-role="footer" id="footer"></footer>
+<footer data-role="footer" id="footer">
+  <p>© RAPIDOtrans 2016-2017</p>
+</footer>
 
 <script type="text/javascript">
-    // By default, swipe is enabled.
     $('section').horizon();
-
-    // If you do not want to include another plugin, TouchSwipe, you can set it to false in the default options by passing in the option as false.
-    //$('section').horizon({swipe: false});
-
     $(document).on('click', '.go-to-2', function () {
         $(document).horizon('scrollTo', 'section-section2');
     });
@@ -179,11 +178,9 @@
 
 <div class="jquery-script-ads"><script type="text/javascript"><!--
 google_ad_client = "ca-pub-2783044520727903";
-/* jQuery_demo */
 google_ad_slot = "2780937993";
 google_ad_width = 728;
 google_ad_height = 90;
-//-->
 </script>
 <script type="text/javascript"
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
@@ -199,7 +196,6 @@ $(document).ready(function () {
     $('#social, .logo').toggleClass('reveal');
   };
 
-  //Nav
   $('.navBtn').click(function() {
     toggleMenu();
   });

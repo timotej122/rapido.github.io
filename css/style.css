@@ -1,47 +1,80 @@
 /*DEFINÍCIE FONTOV*/
 @font-face {
-    font-family: Roboto-Regular;                 
-    src: url(../font/Roboto/Roboto-Regular.ttf);
+  font-family: Roboto-Regular;                 
+  src: url(../font/Roboto/Roboto-Regular.ttf);
 }
 
 @font-face {
-    font-family: Roboto-Thin;                 
-    src: url(../font/Roboto/Roboto-Thin.ttf);
+  font-family: Roboto-Thin;                 
+  src: url(../font/Roboto/Roboto-Thin.ttf);
 }
 
 @font-face {
-    font-family: Roboto-Thin-Italic;                 
-    src: url(../font/Roboto/Roboto-ThinItalic.ttf);
+  font-family: Roboto-Thin-Italic;                 
+  src: url(../font/Roboto/Roboto-ThinItalic.ttf);
 }
 
 @font-face {
-    font-family: Roboto-Bold;                 
-    src: url(../font/Roboto/Roboto-Bold.ttf);
+  font-family: Roboto-Bold;                 
+  src: url(../font/Roboto/Roboto-Bold.ttf);
 }
 
 @font-face {
-    font-family: Roboto-Bold-Italic;                 
-    src: url(../font/Roboto/Roboto-BoldItalic.ttf);
+  font-family: Roboto-Bold-Italic;                 
+  src: url(../font/Roboto/Roboto-BoldItalic.ttf);
 }
 /*DEFINÍCIE FONTOV*/
 
+/*-------------------------Všeobecne veci-------------------------*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Roboto-Regular
+  font-family: Roboto-Regular;
 }
 
 html, body {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
-/*HLAVIČKA*/
-/*Menu*/
+section {
+  float: left;
+  display: block;
+  height: 100%;
+  padding: 75px 0 0 0;
+  margin: 0;
+}
+
+#section-section1, #section-section2, #section-section3, #section-section4 {
+  background-image: url(../img/background2.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 20%;
+  background-size: cover;
+}
+
+.horizon-prev, .horizon-next {
+  position: fixed;
+  top: 50%;
+  margin-top: -24px;
+  z-index: 9999;
+}
+
+.horizon-prev {
+  left: 8px;
+}
+
+.horizon-next {
+  right: 8px;
+}
+/*-------------------------Všeobecne veci-------------------------*/
+
+/*-----------------------------HLAVIČKA---------------------------*/
+/*-------------------------------Menu-----------------------------*/
 header {
   width: 5%;
   height: 100%;
@@ -135,52 +168,79 @@ nav ul {
 }
 
 nav ul li {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 
 nav ul a {
-    text-decoration: none;
-    color: #fff;
-    height: 50px;
-    display: block;
-    padding: 12px;
+  text-decoration: none;
+  color: #fff;
+  height: 50px;
+  display: block;
+  padding: 12px;
 }
 
 nav ul a:hover {
-    color: #304269;
+  color: #304269;
 }
 
 nav ul a span {
-    transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-/*Menu*/
+/*-------------------------------Menu-----------------------------*/
 
-/*Submune*/
+/*------------------------------SubMenu---------------------------*/
 .sub_menu_1_content {
-    display: none;
-    float: right;
-    width: 300px;
-    position: relative;
-    background-color: #304269;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    margin-bottom: 30px;
+  display: none;
+  float: right;
+  width: 300px;
+  position: relative;
+  background-color: #304269;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-bottom: 30px;
 }
 .sub_menu_1_content a{
-    color: #D9E8F5;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+  color: #D9E8F5;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 .sub_menu_1_content a:hover {
-    background-color: #D9E8F5;
-    color: #304269;
+  background-color: #D9E8F5;
+  color: #304269;
 }
 .sub_menu_1:hover .sub_menu_1_content {
-    display: block;
+  display: block;
 }
-/*Submenu*/
-/*HLAVIČKA*/
+/*------------------------------SubMenu---------------------------*/
+/*-----------------------------HLAVIČKA---------------------------*/
+
+
+
+/*----------------------------INDEX.HTML--------------------------*/
+/*----------------------------1. Stránka--------------------------*/
+.content_uvod {
+  width: 400px;
+  margin-top: 20%;
+  float: left;
+  margin-left: 20%;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.content_uvod h1{
+  font-family: Roboto-Bold-Italic;
+  margin-bottom: 30px;
+  text-align: center; 
+}
+
+.content_uvod h1 i.rt {
+  font-family: Roboto-Thin; 
+}
+
+.content_uvod p {
+  margin-bottom: 30px; 
+}
 
 .button {
   display: inline-block;
@@ -235,52 +295,15 @@ nav ul a span {
   color: #D9E8F5;
 }
 
-section {
-    float: left;
-    display: block;
-    height: 100%;
-    padding: 75px 0 0 0;
-    margin: 0;
+.kamion img {
+  float: right;
+  margin-top: 200px;
+  margin-right: 100px;
 }
-
-#section-section1, #section-section2, #section-section3, #section-section4 {
-    background: #ffefc5;
-}
-
-/*INDEX.HTML*/
-
-/*1. Stránka*/
-.uvod {
-  background-image: url(../img/kamion.png);
-  background-repeat: no-repeat;
-  background-position: 
-}
-.content_uvod {
-  width: 400px;
-  margin-top: 20%;
-  float: left;
-  margin-left: 20%;
-  text-align: justify;
-  text-align-last: center;
-}
-
-.content_uvod h1{
-  font-family: Roboto-Bold-Italic;
-  margin-bottom: 30px;
-  text-align: center; 
-}
-
-.content_uvod h1 i.rt {
-  font-family: Roboto-Thin; 
-}
-
-.content_uvod p {
-  margin-bottom: 30px; 
-}
-/*1. Stránka*/
+/*----------------------------1. Stránka--------------------------*/
 
 
-/*2. Stránka*/
+/*----------------------------2. Stránka--------------------------*/
 .content_vozidla {
   width: 500px;
   float: left;
@@ -305,17 +328,24 @@ section {
   text-align: left;
 }
 
-.content_vozidla li, .content_sklady li {
+.content_vozidla li {
 }
 
-.content_vozidla li:before, .content_sklady li:before {
-  content: "⛟"; /* Insert content that looks like bullets */
+.content_vozidla li:before {
+  content: "⛟";
   padding-right: 8px;
-  color: #f26101; /* Or a color you prefer */
+  color: #f26101;
 }
-/*2. Stránka*/
 
-/*3. Stránka*/
+.kamiony img {
+  float: right;
+  margin-top: 160px;
+  margin-right: 100px;
+}
+
+/*----------------------------2. Stránka--------------------------*/
+
+/*----------------------------3. Stránka--------------------------*/
 .content_sklady {
   width: 500px;
   margin-top: 5%;
@@ -346,13 +376,19 @@ section {
 }
 
 .content_sklady li:before {
-  content: "⛟"; /* Insert content that looks like bullets */
+  content: "⛟"; 
   padding-right: 8px;
-  color: #f26101; /* Or a color you prefer */
+  color: #f26101;
 }
-/*3. Stránka*/
 
-/*4. Stránka*/
+.sklad img {
+  float: right;
+  margin-top: 220px;
+  margin-right: 100px;
+}
+/*----------------------------3. Stránka--------------------------*/
+
+/*----------------------------4. Stránka--------------------------*/
 .content_logistika {
   width: 500px;
   margin-top: 5%;
@@ -383,16 +419,22 @@ section {
 }
 
 .content_logistika li:before {
-  content: "⛟"; /* Insert content that looks like bullets */
+  content: "⛟";
   padding-right: 8px;
-  color: #f26101; /* Or a color you prefer */
+  color: #f26101;
 }
-/*4. Stránka*/
 
-/*INDEX.HTML*/
+.logisticka img {
+  float: right;
+  margin-top: 220px;
+  margin-right: 100px;
+}
+/*----------------------------4. Stránka--------------------------*/
+/*----------------------------INDEX.HTML--------------------------*/
 
-/*O NAS*/
-/*Charakteristika*/
+
+/*----------------------------O_NAS.HTML--------------------------*/
+/*-------------------------Charakteristika------------------------*/
 .charakteristika {
   width: 400px;
   margin-top: 10%;
@@ -431,9 +473,9 @@ section {
   padding-right: 8px;
   color: #f26101;
 }
-/*Charakteristika*/
+/*-------------------------Charakteristika------------------------*/
 
-/*Uzitocne odkazy*/
+/*-------------------------Uzitocne odkazy------------------------*/
 .uzitocne_odkazy {
   width: 400px;
   margin-left: 38%;
@@ -449,11 +491,12 @@ section {
 .uzitocne_odkazy p {
   margin-bottom: 30px; 
 }
-/*uzitocne odkazy*/
-/*O NAS*/
+/*-------------------------Uzitocne odkazy------------------------*/
+/*----------------------------O_NAS.HTML--------------------------*/
 
-/*PONUKA*/
-/*Cenník*/
+
+/*---------------------------PONUKA.HTML--------------------------*/
+/*-----------------------------Cenník-----------------------------*/
 .cennik {
   width: 400px;
   margin-left: 38%;
@@ -469,11 +512,98 @@ section {
 .cennik p {
   margin-bottom: 30px; 
 }
-/*Cenník*/
-/*PONUKA*/
+/*-----------------------------Cenník-----------------------------*/
 
-/*KONTAKT*/
-/*Kontakt*/
+/*---------------------------Voľné miesta-------------------------*/
+.volne_miesta {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.volne_miesta h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+th {
+  background-color: #f26101;
+  color: white;
+}
+/*---------------------------Voľné miesta-------------------------*/
+
+/*------------------------------Video-----------------------------*/
+/*------------------------------Video-----------------------------*/
+
+/*-------------------------------Foto-----------------------------*/
+.foto h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.jlr {
+  font-size: 0;
+  margin-left: 10%;
+}
+
+.jlr div {
+  display: inline-block;    
+  padding: 5px;
+
+}
+
+.jlr div img {
+  height: 200px;
+  width:80%;
+}
+
+.jlr img.jlr_loaded {
+  -webkit-transition: opacity 1s ease-in;
+  -moz-transition: opacity 1s ease-in;
+  -o-transition: opacity 1s ease-in;
+  -ms-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+  opacity: 1;
+}
+
+.jlr .jlr_item {
+  font-size: 1rem;
+  display: inline-block;    
+  padding: 5px;
+}
+
+.jlr img.jlr_img {
+  height: 200px;
+
+}
+
+.jlr img.jlr_loaded {
+  -webkit-transition: opacity 1s ease-in;
+  -moz-transition: opacity 1s ease-in;
+  -o-transition: opacity 1s ease-in;
+  -ms-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+  opacity: 1;
+}
+/*-------------------------------Foto-----------------------------*/
+/*---------------------------PONUKA.HTML--------------------------*/
+
+
+/*---------------------------KONTAKT.HTML-------------------------*/
+/*-----------------------------Kontakt----------------------------*/
 .kontant {
   width: 400px;
   margin-left: 38%;
@@ -489,13 +619,9 @@ section {
 .kontant p {
   margin-bottom: 30px; 
 }
+/*-----------------------------Kontakt----------------------------*/
 
-iframe {
-  
-}
-/*Kontakt*/
-
-/*Kontaktný formulár*/
+/*------------------------Kontaktný formulár----------------------*/
 .kontaktny_formular {
   width: 80%;
   margin-left: 15%;
@@ -507,98 +633,32 @@ iframe {
 }
 
 input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 input[type=submit] {
-    background-color: #f26101;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  background-color: #f26101;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: #304269;
+  background-color: #304269;
 }
 
 .container {
-    border-radius: 5px;;
-    padding: 20px;
+  border-radius: 5px;;
+  padding: 20px;
 }
-/*Kontaktný formulár*/
-/*KONTAKT*/
-
-/*FOTO*/
-.foto h2 {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.jlr {
-  font-size: 0;
-  margin-left: 10%;
-}
-
-.jlr div {
-    display: inline-block;    
-    padding: 5px;
-
-}
-
-.jlr div img {
-    height: 200px;
-    width:80%;
-}
-
-.jlr img.jlr_loaded {
-     -webkit-transition: opacity 1s ease-in;
-    -moz-transition: opacity 1s ease-in;
-    -o-transition: opacity 1s ease-in;
-    -ms-transition: opacity 1s ease-in;
-    transition: opacity 1s ease-in;
-    opacity: 1;
-}
-
-.jlr .jlr_item {
-    font-size: 1rem;
-    display: inline-block;    
-    padding: 5px;
-}
-
-.jlr img.jlr_img {
-    height: 200px;
-
-}
-
-.jlr img.jlr_loaded {
-     -webkit-transition: opacity 1s ease-in;
-    -moz-transition: opacity 1s ease-in;
-    -o-transition: opacity 1s ease-in;
-    -ms-transition: opacity 1s ease-in;
-    transition: opacity 1s ease-in;
-    opacity: 1;
-}
-/*FOTO*/
-.horizon-prev, .horizon-next {
-    position: fixed;
-    top: 50%;
-    margin-top: -24px;
-    z-index: 9999;
-}
-
-.horizon-prev {
-    left: 8px;
-}
-
-.horizon-next {
-    right: 8px;
-}
+/*------------------------Kontaktný formulár----------------------*/
+/*---------------------------KONTAKT.HTML-------------------------*/
