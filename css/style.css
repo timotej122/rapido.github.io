@@ -49,12 +49,14 @@ section {
   margin: 0;
 }
 
-#section-section1, #section-section2, #section-section3, #section-section4 {
-  background-image: url(../img/background2.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  width: 20%;
-  background-size: cover;
+h2 {
+  padding: 4px;
+  border-bottom: 2px solid #f4511e;
+  border-bottom: 2px solid #f26101;
+}
+
+#section-section1, #section-section2, #section-section3, #section-section4, #section-section5, #section-section6 {
+  background: #fff;
 }
 
 .horizon-prev, .horizon-next {
@@ -475,6 +477,42 @@ nav ul a span {
 }
 /*-------------------------Charakteristika------------------------*/
 
+/*-----------------------------Náš tím----------------------------*/
+.nas_tim {
+  width: 400px;
+  margin-left: 38%;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.nas_tim h2{
+  margin-bottom: 30px;
+  text-align: center; 
+}
+
+.nas_tim p {
+  margin-bottom: 30px; 
+}
+/*-----------------------------Náš tím----------------------------*/
+
+/*---------------------------Naši klienti-------------------------*/
+.nasi_klienti {
+  width: 400px;
+  margin-left: 38%;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.nasi_klienti h2{
+  margin-bottom: 30px;
+  text-align: center; 
+}
+
+.nasi_klienti p {
+  margin-bottom: 30px; 
+}
+/*---------------------------Naši klienti-------------------------*/
+
 /*-------------------------Uzitocne odkazy------------------------*/
 .uzitocne_odkazy {
   width: 400px;
@@ -601,6 +639,49 @@ th {
 /*-------------------------------Foto-----------------------------*/
 /*---------------------------PONUKA.HTML--------------------------*/
 
+/*--------------------------DOTAZNÍK.HTML-------------------------*/
+.dotaznik_1 {
+  width: 80%;
+  margin-left: 15%;
+}
+
+.dotaznik_1 h2 {
+  margin-bottom: 30px;
+}
+
+.dotaznik_1 h2.last {
+  margin-top: 30px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #f26101;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #304269;
+}
+
+.container {
+  border-radius: 5px;;
+  padding: 20px;
+}
+/*--------------------------DOTAZNÍK.HTML-------------------------*/
 
 /*---------------------------KONTAKT.HTML-------------------------*/
 /*-----------------------------Kontakt----------------------------*/
@@ -618,6 +699,27 @@ th {
 
 .kontant p {
   margin-bottom: 30px; 
+}
+
+.kontant ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.kontant li {
+}
+
+.kontant li:before {
+  content: "⛟"; 
+  padding-right: 8px;
+  color: #f26101;
+}
+
+.mapa {
+  width: 100%;
+  margin-left: 5%;
 }
 /*-----------------------------Kontakt----------------------------*/
 

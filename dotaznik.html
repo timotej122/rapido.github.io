@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html>
+<head lang="sk">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="favicon/favicon.png"/>
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
+    <script type="text/javascript" src="js/jquery.horizonScroll.js"></script>
+    <title>RAPIDO trans</title>
+
+</head>
+<body>
+  <div class="overlay"></div>
+    <header data-role="header" id="header">
+      <div class="navBtn">+</div>
+        <nav class="menu">
+          <ul>
+            <li>
+                <a href="index.html"><span>Domov</span></a>
+            </li>
+
+            <li class="sub_menu_1">
+                <a href="o_nas.html"><span>O nás</span></a>
+            </li>
+
+            <li class="sub_menu_1">
+                <a href="ponuka.html"><span>Ponuka</span></a>
+            </li>
+
+            <li class="sub_menu_1">
+                <a href="dotaznik.html"><span>Dotazník</span></a>
+            </li>
+
+            <li class="sub_menu_1">
+                <a href="kontakt.html"><span>Kontakt</span></a>
+            </li>
+
+          </ul>
+        </nav>
+    </header>
+
+<div class="horizon-prev"><img src="img/l-arrow.png" title="spät" alt="spat"></div>
+<div class="horizon-next"><img src="img/r-arrow.png" title="dalej" alt="dalej"></div>
+
+<!--OTÁZKA 1-->
+<section data-role="section" id="section-section1">
+  <div id="1" class="slide uvod">
+    <div class="dotaznik_1">
+        <div class="container">
+        <h2>DOTAZNÍK</h2>
+          <form action="/action_page.php">
+            <label for="fname">Názov spoločnosti</label>
+              <input type="text" id="nazov_spolocnosti" name="nazov_spolocnosti" placeholder="Názov Vašej spoločnosti...">
+
+              <label for="lname">Meno a priezvisko</label>
+              <input type="text" id="meno_a_priezvisko" name="meno_a_priezvisko" placeholder="Vaše meno a priezvisko...">
+
+              <label for="lname">Váš E-mail</label>
+              <input type="text" id="email" name="email" placeholder="Váš e-mail...">
+
+              <label for="country">Krajina v ktorej ste využili naše služby</label>
+              <select id="country" name="country">
+                  <option value="slovakia">Slovakia</option>
+                  <option value="czech">Czech Republic</option>
+                  <option value="germany">Germany</option>
+                  <option value="netherland">Netherland</option>
+                  <option value="hungary">Hungary</option>
+                  <option value="france">France</option>
+              </select>
+          </form>
+
+          <div class="button">
+        <a href="#2"><span>Ďalej</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--OTÁZKA 1-->
+
+<!--OTÁZKA 2-->
+<section data-role="section" id="section-section2">
+  <div id="2" class="slide">
+    <div class="dotaznik_1">
+      <div class="container">
+        <h2>1. PRÍJEM TOVARU</h2>
+          <h4>1.1 Rychlost prijatia tovaru na sklad</h4>
+          <form action="/action_page.php">
+            <p>                       
+              <input type="radio" id="velmi_spokojny_1" name="spokojnost_1" value="velmi_spokojny">
+              <label for="velmi_spokojny_1">Veľmi spokojný</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="spokojny_1" name="spokojnost_1" value="spokojny">
+              <label for="spokojny_1">Spokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="ani_1" name="spokojnost_1" value="spokojny">
+              <label for="ani_1">Ani spokojný ani nespokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="nespokojny_1" name="spokojnost_1" value="nespokojny">
+              <label for="nespokojny_1">Nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="velmi_nespokojny_1" name="spokojnost_1" value="velmi_nespokojny">
+              <label for="velmi_nespokojny_1">Veľmi nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <label for="subject"><b>Poznámka</b></label>
+              <textarea id="subject" name="subject" placeholder="Sem napíšte obsah poznámky..." style="height:100px"></textarea>
+
+
+          <h4>1.2 Dodržiavanie procesu prijatia tovaru zo strany RAPIDOtrans (Systemový príjem tovaru, informovanie zákazníka)</h4>
+
+            <p>                       
+              <input type="radio" id="velmi_spokojny_2" name="spokojnost_2" value="velmi_spokojny">
+              <label for="velmi_spokojny_2">Veľmi spokojný</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="spokojny_2" name="spokojnost_2" value="spokojny">
+              <label for="spokojny_2">Spokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="ani_2" name="spokojnost_2" value="spokojny">
+              <label for="ani_2">Ani spokojný ani nespokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="nespokojny_2" name="spokojnost_2" value="nespokojny">
+              <label for="nespokojny_2">Nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="velmi_nespokojny_2" name="spokojnost_2" value="velmi_nespokojny">
+              <label for="velmi_nespokojny_2">Veľmi nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <label for="subject_2"><b>Poznámka</b></label>
+              <textarea id="subject_2" name="spokojnost_2" placeholder="Sem napíšte obsah poznámky..." style="height:100px"></textarea>
+          </form>
+
+          <div class="button">
+        <a href="#3"><span>Ďalej</span></a>
+        </div>
+      </div>
+
+    </div>     
+   </div> 
+</section>
+<!--OTÁZKA 2-->
+
+<!--OTÁZKA 3-->
+<section data-role="section" id="section-section3">
+  <div id="3" class="slide">
+    <div class="dotaznik_1">
+      <div class="container">
+        <h2>2. OBJEDNÁVKA</h2>
+          <h4>2.1 Proces spracovania objednávky zodpovedá požiadavkam klienta</h4>
+          <form action="/action_page.php">
+            <p>                       
+              <input type="radio" id="velmi_spokojny_3" name="spokojnost_3" value="velmi_spokojny">
+              <label for="velmi_spokojny_3">Veľmi spokojný</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="spokojny_3" name="spokojnost_3" value="spokojny">
+              <label for="spokojny_3">Spokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="ani_3" name="spokojnost_3" value="spokojny">
+              <label for="ani_3">Ani spokojný ani nespokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="nespokojny_3" name="spokojnost_3" value="nespokojny">
+              <label for="nespokojny_3">Nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="velmi_nespokojny_3" name="spokojnost_3" value="velmi_nespokojny">
+              <label for="velmi_nespokojny_3">Veľmi nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <label for="subject"><b>Poznámka</b></label>
+              <textarea id="subject" name="subject" placeholder="Sem napíšte obsah poznámky..." style="height:100px"></textarea>
+
+
+          <h4>2.2 Komunikácia s administrativou skladu ohľadom objednávky</h4>
+
+            <p>                       
+              <input type="radio" id="velmi_spokojny_4" name="spokojnost_4" value="velmi_spokojny">
+              <label for="velmi_spokojny_4">Veľmi spokojný</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="spokojny_4" name="spokojnost_4" value="spokojny">
+              <label for="spokojny_4">Spokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="ani_4" name="spokojnost_4" value="spokojny">
+              <label for="ani_4">Ani spokojný ani nespokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="nespokojny_4" name="spokojnost_4" value="nespokojny">
+              <label for="nespokojny_4">Nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="velmi_nespokojny_4" name="spokojnost_4" value="velmi_nespokojny">
+              <label for="velmi_nespokojny_4">Veľmi nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <label for="subject"><b>Poznámka</b></label>
+              <textarea id="subject" name="subject" placeholder="Sem napíšte obsah poznámky..." style="height:100px"></textarea>
+          </form>
+
+          <div class="button">
+        <a href="#4"><span>Ďalej</span></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--OTÁZKA 3-->
+
+<!--OTÁZKA 4-->
+<section data-role="section" id="section-section4">
+  <div id="4" class="slide">
+    <div class="dotaznik_1">
+      <div class="container">
+        <h2>3. DOPRAVA/DODÁVANIE</h2>
+          <h4>3.1 Nachystaný tovar zodpovedá objednávke (množstvo, expirácia)</h4>
+          <form action="/action_page.php">
+            <p>                       
+              <input type="radio" id="velmi_spokojny_5" name="spokojnost_5" value="velmi_spokojny">
+              <label for="velmi_spokojny_5">Veľmi spokojný</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="spokojny_5" name="spokojnost_5" value="spokojny">
+              <label for="spokojny_5">Spokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="ani_5" name="spokojnost_5" value="spokojny">
+              <label for="ani_5">Ani spokojný ani nespokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="nespokojny_5" name="spokojnost_5" value="nespokojny">
+              <label for="nespokojny_5">Nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="velmi_nespokojny_5" name="spokojnost_5" value="velmi_nespokojny">
+              <label for="velmi_nespokojny_5">Veľmi nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <label for="subject"><b>Poznámka</b></label>
+              <textarea id="subject" name="subject" placeholder="Sem napíšte obsah poznámky..." style="height:100px"></textarea>
+
+
+          <h4>3.2 Tovar je dodávaný v požadovanom stave (nepoškodený, čistý, dodržanie teplotných podmienok)</h4>
+
+            <p>                       
+              <input type="radio" id="velmi_spokojny_6" name="spokojnost_6" value="velmi_spokojny">
+              <label for="velmi_spokojny_6">Veľmi spokojný</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="spokojny_6" name="spokojnost_6" value="spokojny">
+              <label for="spokojny_6">Spokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="ani_6" name="spokojnost_6" value="spokojny">
+              <label for="ani_6">Ani spokojný ani nespokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="nespokojny_6" name="spokojnost_6" value="nespokojny">
+              <label for="nespokojny_6">Nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="velmi_nespokojny_6" name="spokojnost_6" value="velmi_nespokojny">
+              <label for="velmi_nespokojny_6">Veľmi nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <label for="subject"><b>Poznámka</b></label>
+              <textarea id="subject" name="subject" placeholder="Sem napíšte obsah poznámky..." style="height:100px"></textarea>
+          </form>
+
+          <div class="button">
+        <a href="#5"><span>Ďalej</span></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--OTÁZKA 4-->
+
+<!--OTÁZKA 5-->
+<section data-role="section" id="section-section5">
+  <div id="5" class="slide">
+    <div class="dotaznik_1">
+      <div class="container">
+        <h2>3. DOPRAVA/DODÁVANIE</h2>
+          <h4>3.3 Doprava prebehla podľa požiadavok klienta (včas, bez meškania)</h4>
+          <form action="/action_page.php">
+            <p>                       
+              <input type="radio" id="velmi_spokojny_7" name="spokojnost_7" value="velmi_spokojny">
+              <label for="velmi_spokojny_7">Veľmi spokojný</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="spokojny_7" name="spokojnost_7" value="spokojny">
+              <label for="spokojny_7">Spokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="ani_7" name="spokojnost_7" value="spokojny">
+              <label for="ani_7">Ani spokojný ani nespokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="nespokojny_7" name="spokojnost_7" value="nespokojny">
+              <label for="nespokojny_7">Nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="velmi_nespokojny_7" name="spokojnost_7" value="velmi_nespokojny">
+              <label for="velmi_nespokojny_7">Veľmi nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <label for="subject"><b>Poznámka</b></label>
+              <textarea id="subject" name="subject" placeholder="Sem napíšte obsah poznámky..." style="height:100px"></textarea>
+
+
+          <h4>3.4 Kamión je čistý a v dobrom technickom stave, vodič je ochotný a zdvorilý</h4>
+
+            <p>                       
+              <input type="radio" id="velmi_spokojny_8" name="spokojnost_8" value="velmi_spokojny">
+              <label for="velmi_spokojny_8">Veľmi spokojný</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="spokojny_8" name="spokojnost_8" value="spokojny">
+              <label for="spokojny_8">Spokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="ani_8" name="spokojnost_8" value="spokojny">
+              <label for="ani_8">Ani spokojný ani nespokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="nespokojny_8" name="spokojnost_8" value="nespokojny">
+              <label for="nespokojny_8">Nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="velmi_nespokojny_8" name="spokojnost_8" value="velmi_nespokojny">
+              <label for="velmi_nespokojny_8">Veľmi nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <label for="subject"><b>Poznámka</b></label>
+              <textarea id="subject" name="subject" placeholder="Sem napíšte obsah poznámky..." style="height:100px"></textarea>
+          </form>
+
+          <div class="button">
+        <a href="#6"><span>Ďalej</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--OTÁZKA 5-->
+
+<!--OTÁZKA 6-->
+<section data-role="section" id="section-section6">
+  <div id="6" class="slide">
+    <div class="dotaznik_1">
+      <div class="container">
+        <h2>4. ADMINISTRATÍVA/REKLAMÁCIA/REPORTING</h2>
+          <h4>4.1 Zákaznik je v prípade reklamacie včas informovaný</h4>
+          <form action="/action_page.php">
+            <p>                       
+              <input type="radio" id="velmi_spokojny_9" name="spokojnost_9" value="velmi_spokojny">
+              <label for="velmi_spokojny_9">Veľmi spokojný</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="spokojny_9" name="spokojnost_9" value="spokojny">
+              <label for="spokojny_9">Spokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="ani_9" name="spokojnost_9" value="spokojny">
+              <label for="ani_9">Ani spokojný ani nespokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="nespokojny_9" name="spokojnost_9" value="nespokojny">
+              <label for="nespokojny_9">Nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="velmi_nespokojny_9" name="spokojnost_9" value="velmi_nespokojny">
+              <label for="velmi_nespokojny_9">Veľmi nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <label for="subject"><b>Poznámka</b></label>
+              <textarea id="subject" name="subject" placeholder="Sem napíšte obsah poznámky..." style="height:100px"></textarea>
+
+
+          <h4>4.2 Reklamacia je včas vyriešená, evidencia reklamacie je prehľadná</h4>
+
+            <p>                       
+              <input type="radio" id="velmi_spokojny_10" name="spokojnost_10" value="velmi_spokojny">
+              <label for="velmi_spokojny_10">Veľmi spokojný</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="spokojny_10" name="spokojnost_10" value="spokojny">
+              <label for="spokojny_10">Spokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="ani_10" name="spokojnost_10" value="spokojny">
+              <label for="ani_10">Ani spokojný ani nespokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="nespokojny_10" name="spokojnost_10" value="nespokojny">
+              <label for="nespokojny_10">Nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="velmi_nespokojny_10" name="spokojnost_10" value="velmi_nespokojny">
+              <label for="velmi_nespokojny_10">Veľmi nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <label for="subject"><b>Poznámka</b></label>
+              <textarea id="subject" name="subject" placeholder="Sem napíšte obsah poznámky..." style="height:100px"></textarea>
+          </form>
+
+          <div class="button">
+        <a href="#7"><span>Ďalej</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--OTÁZKA 6-->
+
+<!--OTÁZKA 7-->
+<section data-role="section" id="section-section7">
+  <div id="7" class="slide">
+    <div class="dotaznik_1">
+      <div class="container">
+        <h2>4. ADMINISTRATÍVA/REKLAMÁCIA/REPORTING</h2>
+          <h4>4.3 Komunikácia s reklamačnym oddelením</h4>
+          <form action="/action_page.php">
+            <p>                       
+              <input type="radio" id="velmi_spokojny_11" name="spokojnost_11" value="velmi_spokojny">
+              <label for="velmi_spokojny_11">Veľmi spokojný</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="spokojny_11" name="spokojnost_11" value="spokojny">
+              <label for="spokojny_11">Spokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="ani_11" name="spokojnost_11" value="spokojny">
+              <label for="ani_11">Ani spokojný ani nespokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="nespokojny_11" name="spokojnost_11" value="nespokojny">
+              <label for="nespokojny_11">Nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="velmi_nespokojny_11" name="spokojnost_11" value="velmi_nespokojny">
+              <label for="velmi_nespokojny_11">Veľmi nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <label for="subject"><b>Poznámka</b></label>
+              <textarea id="subject" name="subject" placeholder="Sem napíšte obsah poznámky..." style="height:100px"></textarea>
+
+
+          <h4>4.4 Doklady - potvrdenia (úplnosť dokladov, včasnosť)</h4>
+
+            <p>                       
+              <input type="radio" id="velmi_spokojny_12" name="spokojnost_12" value="velmi_spokojny">
+              <label for="velmi_spokojny_12">Veľmi spokojný</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="spokojny_12" name="spokojnost_12" value="spokojny">
+              <label for="spokojny_12">Spokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="ani_12" name="spokojnost_12" value="spokojny">
+              <label for="ani_12">Ani spokojný ani nespokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="nespokojny_12" name="spokojnost_12" value="nespokojny">
+              <label for="nespokojny_12">Nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="velmi_nespokojny_12" name="spokojnost_12" value="velmi_nespokojny">
+              <label for="velmi_nespokojny_12">Veľmi nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <label for="subject"><b>Poznámka</b></label>
+              <textarea id="subject" name="subject" placeholder="Sem napíšte obsah poznámky..." style="height:100px"></textarea>
+          </form>
+
+          <div class="button">
+        <a href="#8"><span>Ďalej</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--OTÁZKA 7-->
+
+<!--OTÁZKA 8-->
+<section data-role="section" id="section-section8">
+  <div id="8" class="slide">
+    <div class="dotaznik_1">
+      <div class="container">
+        <h2>5. FAKTURÁCIA</h2>
+          <h4>5.1 Presnost fakturacie (rozdiel v cenách alebo v množstve)</h4>
+          <form action="/action_page.php">
+            <p>                       
+              <input type="radio" id="velmi_spokojny_13" name="spokojnost_13" value="velmi_spokojny">
+              <label for="velmi_spokojny_13">Veľmi spokojný</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="spokojny_13" name="spokojnost_13" value="spokojny">
+              <label for="spokojny_13">Spokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="ani_13" name="spokojnost_13" value="spokojny">
+              <label for="ani_13">Ani spokojný ani nespokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="nespokojny_13" name="spokojnost_13" value="nespokojny">
+              <label for="nespokojny_13">Nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="velmi_nespokojny_13" name="spokojnost_13" value="velmi_nespokojny">
+              <label for="velmi_nespokojny_13">Veľmi nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <label for="subject"><b>Poznámka</b></label>
+              <textarea id="subject" name="subject" placeholder="Sem napíšte obsah poznámky..." style="height:100px"></textarea>
+
+
+          <h4>5.2 Údaje na faktúre sú prehľadné a v požadovanom formáte</h4>
+
+            <p>                       
+              <input type="radio" id="velmi_spokojny_14" name="spokojnost_14" value="velmi_spokojny">
+              <label for="velmi_spokojny_14">Veľmi spokojný</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="spokojny_14" name="spokojnost_14" value="spokojny">
+              <label for="spokojny_14">Spokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="ani_14" name="spokojnost_14" value="spokojny">
+              <label for="ani_14">Ani spokojný ani nespokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="nespokojny_14" name="spokojnost_14" value="nespokojny">
+              <label for="nespokojny_14">Nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="velmi_nespokojny_14" name="spokojnost_14" value="velmi_nespokojny">
+              <label for="velmi_nespokojny_14">Veľmi nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <label for="subject"><b>Poznámka</b></label>
+              <textarea id="subject" name="subject" placeholder="Sem napíšte obsah poznámky..." style="height:100px"></textarea>
+          </form>
+
+          <div class="button">
+        <a href="#9"><span>Ďalej</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--OTÁZKA 8-->
+
+<!--OTÁZKA 9-->
+<section data-role="section" id="section-section9">
+  <div id="9" class="slide">
+    <div class="dotaznik_1">
+      <div class="container">
+        <h2>6. INFORMAČNÉ TECHNOLÓGIE</h2>
+          <h4>6.1 Technické riešenie IT/WEB portál, je na požadovanej úrovni</h4>
+          <form action="/action_page.php">
+
+              <label for="subject"><b>Poznámka (aké funkcie nám poradíte?)</b></label>
+              <textarea id="subject" name="subject" placeholder="Sem napíšte obsah poznámky..." style="height:100px"></textarea>
+
+
+          <h4>6.2 Riešenie a rýchlosť implementácie systémovych zmien</h4>
+
+            <p>                       
+              <input type="radio" id="velmi_spokojny_15" name="spokojnost_15" value="velmi_spokojny">
+              <label for="velmi_spokojny_15">Veľmi spokojný</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="spokojny_15" name="spokojnost_15" value="spokojny">
+              <label for="spokojny_15">Spokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="ani_15" name="spokojnost_15" value="spokojny">
+              <label for="ani_15">Ani spokojný ani nespokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="nespokojny_15" name="spokojnost_15" value="nespokojny">
+              <label for="nespokojny_15">Nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="velmi_nespokojny_15" name="spokojnost_15" value="velmi_nespokojny">
+              <label for="velmi_nespokojny_15">Veľmi nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <label for="subject"><b>Poznámka</b></label>
+              <textarea id="subject" name="subject" placeholder="Sem napíšte obsah poznámky..." style="height:100px"></textarea>
+          </form>
+
+          <div class="button">
+        <a href="#10"><span>Ďalej</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--OTÁZKA 9-->
+
+<!--OTÁZKA 10-->
+<section data-role="section" id="section-section10">
+  <div id="10" class="slide">
+    <div class="dotaznik_1">
+      <div class="container">
+        <h2>7. KOMUNIKÁCIA</h2>
+          <h4>7.1 V prípade riešenia konkrétnych problémov viem, na koho sa mám v RAPIDOtrans obrátiť</h4>
+          <form action="/action_page.php">
+            <p>                       
+              <input type="radio" id="velmi_spokojny_16" name="spokojnost_16" value="velmi_spokojny">
+              <label for="velmi_spokojny_16">Veľmi spokojný</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="spokojny_16" name="spokojnost_16" value="spokojny">
+              <label for="spokojny_16">Spokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="ani_16" name="spokojnost_16" value="spokojny">
+              <label for="ani_16">Ani spokojný ani nespokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="nespokojny_16" name="spokojnost_16" value="nespokojny">
+              <label for="nespokojny_16">Nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="velmi_nespokojny_16" name="spokojnost_16" value="velmi_nespokojny">
+              <label for="velmi_nespokojny_16">Veľmi nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <label for="subject"><b>Poznámka</b></label>
+              <textarea id="subject" name="subject" placeholder="Sem napíšte obsah poznámky..." style="height:100px"></textarea>
+
+
+          <h4>7.2 Spolupráca RAPIDOtrans na aktivitách alebo projektoch</h4>
+
+            <p>                       
+              <input type="radio" id="velmi_spokojny_17" name="spokojnost_17" value="velmi_spokojny">
+              <label for="velmi_spokojny_17">Veľmi spokojný</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="spokojny_17" name="spokojnost_17" value="spokojny">
+              <label for="spokojny_17">Spokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="ani_17" name="spokojnost_17" value="spokojny">
+              <label for="ani_17">Ani spokojný ani nespokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="nespokojny_17" name="spokojnost_17" value="nespokojny">
+              <label for="nespokojny_17">Nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="velmi_nespokojny_17" name="spokojnost_17" value="velmi_nespokojny">
+              <label for="velmi_nespokojny_17">Veľmi nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <label for="subject"><b>Poznámka</b></label>
+              <textarea id="subject" name="subject" placeholder="Sem napíšte obsah poznámky..." style="height:100px"></textarea>
+          </form>
+
+          <div class="button">
+        <a href="#11"><span>Ďalej</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--OTÁZKA 10-->
+
+<!--OTÁZKA 11-->
+<section data-role="section" id="section-section11">
+  <div id="11" class="slide">
+    <div class="dotaznik_1">
+      <div class="container">
+        <h2>8. PRIORITNÉ OBLASTI</h2>
+          <h4>8.1 Zaškrtnite maximálne 3 prioritné oblasti poskytovania služieb</h4>
+          <form action="/action_page.php">
+            <p>                       
+              <input type="checkbox" id="prijem" name="spokojnost_18" value="prijem">
+              <label for="prijem">Príjem tovaru</label> 
+            </p>
+
+            <p>
+              <input type="checkbox" id="objednavka" name="spokojnost_18" value="objednavka">
+              <label for="objednavka">Objednávka</label>
+            </p>
+
+            <p>
+              <input type="checkbox" id="dodavanie" name="spokojnost_18" value="dodavanie">
+              <label for="dodavanie">Doprava/Dodávanie</label>
+            </p>
+
+            <p>
+              <input type="checkbox" id="papiere" name="spokojnost_18" value="papiere">
+              <label for="papiere">Administratíva/Reklamácia/Reporting</label> 
+            </p>
+
+            <p>
+              <input type="checkbox" id="faktura" name="spokojnost_18" value="faktura">
+              <label for="faktura">Fakturácia</label> 
+            </p>
+
+            <p>
+              <input type="checkbox" id="info" name="spokojnost_18" value="info">
+              <label for="info">Informačné technológie</label> 
+            </p>
+
+            <p>
+              <input type="checkbox" id="komunikacia" name="spokojnost_18" value="komunikacia">
+              <label for="komunikacia">Komunikacia</label> 
+            </p>
+
+            <h2 class="last">9. VAŠE POSTREHY</h2>
+          <h4>9.1 Ako vnímate celkovo RAPIDOtrans ako poskytovateľa služieb?</h4>
+
+            <p>                       
+              <input type="radio" id="velmi_spokojny_19" name="spokojnost_19" value="velmi_spokojny">
+              <label for="velmi_spokojny_19">Veľmi spokojný</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="spokojny_19" name="spokojnost_19" value="spokojny">
+              <label for="spokojny_19">Spokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="ani_19" name="spokojnost_19" value="spokojny">
+              <label for="ani_19">Ani spokojný ani nespokojný</label>
+            </p>
+
+            <p>
+              <input type="radio" id="nespokojny_19" name="spokojnost_19" value="nespokojny">
+              <label for="nespokojny_19">Nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>
+
+            <p>
+              <input type="radio" id="velmi_nespokojny_19" name="spokojnost_19" value="velmi_nespokojny">
+              <label for="velmi_nespokojny_19">Veľmi nespokojný (Dôvod uveďte v poznámke)</label> 
+            </p>  
+
+            <label for="subject"><b>Poznámka</b></label>
+              <textarea id="subject" name="subject" placeholder="Sem napíšte obsah poznámky..." style="height:100px">
+              </textarea> 
+
+          <h4>9.2 Prosíme o Vaše podnety pre zlepšenie a rozvoj RAPIDOtrans</h4>
+              <textarea id="subject" name="subject" placeholder="Sem napíšte obsah poznámky..." style="height:100px">
+              </textarea>              
+          </form>
+
+          <div class="button">
+        <a href="#7"><span>Odoslať</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--OTÁZKA 11-->
+
+<footer data-role="footer" id="footer"></footer>
+
+<script type="text/javascript">
+    $('section').horizon();
+    $(document).on('click', '.go-to-2', function () {
+        $(document).horizon('scrollTo', 'section-section2');
+    });
+</script>
+
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script>
+$(document).ready(function () { 
+
+  var toggleMenu = function() {
+    $('header').toggleClass('toggle');
+    $('.main').toggleClass('push');
+    $('.overlay').toggleClass('block');
+    $('#social, .logo').toggleClass('reveal');
+  };
+
+  $('.navBtn').click(function() {
+    toggleMenu();
+  });
+
+  Mousetrap.bind('esc', function() {
+    toggleMenu();
+  });
+
+});
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
